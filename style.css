@@ -1,0 +1,550 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header {
+    position: fixed;
+    z-index: 5;
+}
+
+header nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    background-image: url('assets/skystars.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+header nav h3 {
+    font-weight: 50;
+    background-color: black;
+    color: blanchedalmond;
+    padding: 5px;
+    width: auto;
+    font-family: 'Chanel';
+    font-size: 35px;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    transition: all 0.3s;
+}
+
+header nav ul {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+header nav ul li a{
+    font-family: Courier, monospace;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: greenyellow;
+    background-color: black;
+    color: aquamarine;
+    font-size: 37px;
+    transition: all 0.3s;
+}
+header nav ul li a:hover{
+    background-color: chartreuse;
+    color: black;
+    border-color: black solid;
+    transition: 0.4s;
+}
+
+#home {
+    height: 1000px;
+    width: 100%;
+    background-image: url('assets/bg.jpg');
+    position: static;
+}
+
+@font-face {
+    font-family: 'Genshin';
+    src: url('assets/zh-cn.ttf');
+}
+
+.welcome {
+    background-image: url("assets/skystars.jpg");
+    background-position: bottom;
+    border-radius: 20px;
+    width: 695px;
+    height: 300px;
+    top: 35%;
+    left: 33%;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.welcome h1 {
+    font-weight: 50;
+    font-size: 65px;
+    color: white;
+    font-family: 'Genshin';
+    z-index: 2;
+    position: relative;
+    top: 18%;
+    left: 35%;
+}
+
+.welcome p {
+    font-size: 25px;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Genshin';
+    z-index: 2;
+    position: relative;
+    top: 28%;
+    left: 20;
+}
+
+#about {
+    background-image: url("assets/blacksky.jpg");
+    position: relative;
+    z-index: 3;
+    height: 100vh;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'Chanel';
+    src: url('assets/chanel\ bold.otf');
+}
+
+#aboutme h2 {
+    color: aliceblue;
+    font-family: 'Chanel';
+    font-size: 100px;
+    font-weight: 50;
+    padding-top: 110px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+#aboutme img {
+    position: relative;
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    margin-top: 8%;
+    margin-left: 10%;
+    transition: 0.3s;
+}
+
+#aboutme img:hover {
+    transition: all 0.3s;
+    transform: translateY(-5px);    
+}
+
+#aboutme p {
+    position: absolute;
+    background-color: black;
+    border-radius: 15px;
+    font-family: sans-serif;
+    justify-content: left;
+    color: gainsboro;
+    font-size: 20px;
+    opacity: 0.8;
+    padding: 50px;
+    z-index: 1;
+    bottom: 28%;
+    left: 30%;
+    width: 40%;
+    height: 30%;
+}
+
+@font-face {
+    font-family: 'Code';
+    src: url('assets/CODE\ Bold.otf');
+}
+
+#aboutme span {
+    font-size: 30px;
+    font-family: 'Code';
+}
+
+#aboutme a {
+    background-color: darkblue;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px blue solid;
+    color: azure;
+    transition: 0.3s;
+}
+
+#aboutme a:hover {
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+    transition: 0.3s;
+}
+
+#skills {
+    display: flex;
+    position: absolute;
+    background-image: url('assets/whiteslash.jpg');
+    background-position: center;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+}
+
+#skills .title {
+    display: block;
+    position: absolute;
+    color: aliceblue;
+    font-family: 'Chanel';
+    font-weight: 100;
+    font-size: 100px;
+    top: 8%;
+    left: 36%;
+}
+
+#python {
+    position: relative;
+    background-color: black;
+    border-radius: 10px;
+    justify-content: center;
+    width: 25%;
+    height: 50%;
+    top: 25%;
+    left: 3%;
+}
+
+#python img {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    left: 46%;
+}
+
+#python .python {
+    position: relative;
+    font-family: 'Genshin';
+    font-size: 35px;
+    top: 35px;
+    left: 35.5%;
+}
+
+#python h2 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Genshin';
+    top: 50px;
+    text-align: center;
+}
+
+#python p {
+    position: relative;
+    font-family: 'Genshin';
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    top: 12%;
+}
+
+#html {
+    position: relative;
+    background-color: black;
+    border-radius: 10px;
+    justify-content: center;
+    width: 25%;
+    height: 50%;
+    top: 25%;
+    left: 12.8%;
+}
+
+#html img {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    left: 46%;
+}
+
+#html .html {
+    position: relative;
+    font-family: 'Genshin';
+    font-size: 35px;
+    top: 35px;
+    left: 38.5%;
+}
+
+#html h2 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Genshin';
+    top: 50px;
+    text-align: center;
+}
+
+#html p {
+    position: relative;
+    font-family: 'Genshin';
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    top: 12%;
+}
+
+#css {
+    position: relative;
+    background-color: black;
+    border-radius: 10px;
+    justify-content: center;
+    width: 25%;
+    height: 50%;
+    top: 25%;
+    left: 22%;
+}
+
+#css img {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    left: 46%;
+}
+
+#css .css {
+    position: relative;
+    font-family: 'Genshin';
+    font-size: 35px;
+    top: 35px;
+    left: 42%;
+}
+
+#css h2 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Genshin';
+    top: 50px;
+    text-align: center;
+}
+
+#css p {
+    position: relative;
+    font-family: 'Genshin';
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    top: 12%;
+}
+
+#contact {
+    position: absolute;
+    background-image: url('assets/blacksky.jpg');
+    margin-top: 52.8%;
+    width: 100%;
+    height: 120vh;
+}
+
+.contact > span {
+    display: block;
+    position: absolute;
+    color: aliceblue;
+    font-family: 'Chanel';
+    font-weight: 100;
+    font-size: 85px;
+    z-index: 2;
+    top: 15%;
+    left: 28.5%;
+}
+
+.contact-info {
+    display: flex;
+    position: absolute;
+    background-color: darkblue;
+    border-radius: 10px;
+    width: 75%;
+    height: 50%;
+    top: 30%;
+    left: 12%;
+}
+
+#phone {
+    display: block;
+    position: relative;
+    background-color: aqua;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: 8%;
+    transition: 0.4s;
+}
+
+#phone:hover {
+    box-shadow: none;
+    transition: 0.4s;
+}
+
+#phone img {
+    position: relative;
+    width: 80px;
+    height: auto;
+    top: 25%;
+    left: 37%;
+}
+
+#phone span {
+    position: relative;
+    font-family: 'Genshin';
+    font-size: 20px;
+    top: 38%;
+    right: 13%;
+}
+
+#email {
+    display: block;
+    position: relative;
+    background-color: aqua;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: 18%;
+    transition: 0.4s;
+}
+
+#email:hover {
+    box-shadow: none;
+    transition: 0.4s;
+}
+
+#email img {
+    position: relative;
+    width: 80px;
+    height: auto;
+    top: 25%;
+    left: 36.5%;
+}
+
+#email span {
+    position: relative;
+    font-family: 'Genshin';
+    font-size: 18px;
+    top: 30%;
+    left: 6%;
+}
+
+#map {
+    display: block;
+    position: relative;
+    background-color: aqua;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: 28%;
+    transition: 0.4s;
+}
+
+#map:hover {
+    box-shadow: none;
+    transition: 0.4s;
+}
+
+#map img {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    top: 25%;
+    left: 36.5%;
+}
+
+#map span {
+    display: flex;
+    position: relative;
+    font-family: 'Genshin';
+    font-size: 18px;
+    top: 58%;
+    left: 8%;
+}
+
+#sosmed {
+    display: block;
+    position: absolute;
+    background-color: darkblue;
+    width: 100%;
+    height: 35%;
+    margin-top: 58.5cm;
+}
+
+#sosmed h1 {
+    position: absolute;
+    color: aliceblue;
+    font-size: 50px;
+    font-family: 'Chanel';
+    font-weight: 100;
+    left: 44%;
+    top: 60px;
+}
+
+#sosmed h2 {
+    position: absolute;
+    color: aliceblue;
+    font-family: 'Genshin';
+    font-size: 20px;
+    font-weight: 50;
+    left: 44.6%;
+    top: 160px;
+}
+
+#sosmed ul {
+    display: flex;
+    position: relative;
+    top: 205px;
+    left: 50.8rem;
+}
+
+#sosmed ul li {
+    display: flex;
+    position: relative;
+    margin-right: 20px;
+}
+
+#sosmed > ul > li > a > img {
+    width: 50px;
+    height: 50px;
+}
+
+#sosmed span {
+    display: block;
+    position: relative;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-weight: 200;
+    top: 16rem;
+    left: 40%;
+}
